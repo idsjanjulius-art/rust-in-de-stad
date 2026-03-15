@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>Rust in de Stad | Tour voor zorgmedewerkers in Amsterdam</title>
+    <meta name="description" content="Rust in de Stad is een rustige, betekenisvolle wandeling door Amsterdam Centrum en de Jordaan, speciaal ontworpen voor zorgmedewerkers om te ontspannen en op te laden.">
+    <meta name="keywords" content="rust in Amsterdam, tour voor zorgmedewerkers Amsterdam, rustige wandeling Amsterdam, Amsterdam 750 tour, mindfulness wandeling Amsterdam">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Rust in de Stad | Tour voor zorgmedewerkers in Amsterdam">
+    <meta property="og:description" content="Een rustige wandeling door Amsterdam Centrum en de Jordaan, speciaal voor zorgmedewerkers. Ontdek de rust in de stad.">
+    <meta property="og:image" content="assets/images/hero-canal.png">
+    <meta property="og:url" content="https://www.rustindestad.nl">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      "name": "Rust in de Stad Wandeltour",
+      "description": "Een rustige wandeling door verborgen plekken van Amsterdam, speciaal voor zorgmedewerkers.",
+      "touristType": "Healthcare Workers",
+      "itinerary": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Rokin"},
+          {"@type": "ListItem", "position": 2, "name": "Begijnhof"},
+          {"@type": "ListItem", "position": 3, "name": "Hartenstraat"},
+          {"@type": "ListItem", "position": 4, "name": "Runstraat"},
+          {"@type": "ListItem", "position": 5, "name": "Leliegracht"},
+          {"@type": "ListItem", "position": 6, "name": "Westerkerk"},
+          {"@type": "ListItem", "position": 7, "name": "Café ’t Papeneiland"},
+          {"@type": "ListItem", "position": 8, "name": "Haarlemmerstraat"},
+          {"@type": "ListItem", "position": 9, "name": "Westerpark"}
+        ]
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <header class="navbar">
+        <div class="nav-container container">
+            <a href="#home" class="logo">
+                <img src="assets/images/logo.png" alt="Rust in de Stad Logo" class="nav-logo" onerror="this.onerror=null; this.src=''; this.alt='Rust in de Stad'; this.className='logo-text fallback';">
+            </a>
+            <div class="nav-links">
+                <a href="#info">Over de Tour</a>
+                <a href="#route">De Route</a>
+                <a href="#tickets">Tickets</a>
+                <a href="#partners">Partners</a>
+                <a href="#faq">FAQ</a>
+            </div><button class="menu-toggle" aria-label="Menu openen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-nav-links">
+            <a href="#info">Over de Tour</a>
+            <a href="#route">De Route</a>
+            <a href="#tickets">Tickets</a>
+            <a href="#partners">Partners</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="hero-bg" autoplay loop muted playsinline>
+            <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content reveal">
+            <h1>Rust in de Stad</h1>
+            <h2>Een tour speciaal voor zorgmedewerkers in Amsterdam</h2>
+            <p>Ontdek de rustige en betekenisvolle plekken van Amsterdam. Een ontspannen wandeling, speciaal gecreëerd voor hen die veel geven in hun dagelijks werk en een moment nodig hebben om op te laden in hun eigen stad.</p>
+            <div class="hero-buttons">
+                <a href="#tickets" class="btn btn-primary">Bekijk Tickets</a>
+                <a href="#route" class="btn btn-secondary">Ontdek de Route</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="section info-section">
+        <div class="container">
+            <div class="info-intro reveal">
+                <h2 class="section-title">Hoe vinden Amsterdammers al 750 jaar rust in een steeds drukkere stad?</h2>
+                <p>Amsterdam is in 750 jaar uitgegroeid tot een bruisende, prikkelrijke stad, maar mensen hebben altijd gezocht naar de stille plekken erbinnen. Deze tour neemt je mee naar die plekken.</p>
+                <p>Zorgmedewerkers ervaren vaak een hoge werkdruk, onregelmatige diensten en mentale belasting. Daarom is deze tour ontworpen als een korte, vredige en betekenisvolle ervaring om even op adem te komen in eigen stad.</p>
+            </div>
+            
+            <div class="highlight-cards">
+                <div class="card reveal delay-1">
+                    <div class="card-icon">🌿</div>
+                    <h3>Rustige verborgen plekken</h3>
+                    <p>Ontdek stille straatjes en historische hofjes weg van de drukte.</p>
+                </div>
+                <div class="card reveal delay-2">
+                    <div class="card-icon">👥</div>
+                    <h3>Kleine groep</h3>
+                    <p>Max. 10 personen voor een intieme en persoonlijke ervaring.</p>
+                </div>
+                <div class="card reveal delay-3">
+                    <div class="card-icon">☕</div>
+                    <h3>Koffiepauze</h3>
+                    <p>Een warm moment bij een klassiek lokaal café.</p>
+                </div>
+                <div class="card reveal delay-4">
+                    <div class="card-icon">🧘‍♀️</div>
+                    <h3>Mindfulness afsluiting</h3>
+                    <p>Een kort integratiemoment om echt tot rust te komen in het groen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Route Section -->
+    <section id="route" class="section route-section bg-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">De Route</h2>
+                <p>Een betekenisvolle wandeling die aanvoelt als één verbonden verhaal van rust, balans en reflectie.</p>
+            </div>
+            
+            <div class="route-timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card flex-row">
+                        <div class="route-img-wrapper" title="Klik voor info & kaart" tabindex="0"
+                            data-title="M-net Rokin" 
+                            data-desc="Startpunt in de drukke stad Amsterdam. Hier laten we de hectiek achter ons en focussen we op het water." 
+                            data-img="assets/images/rokin-metro.png" 
+                            data-map="https://maps.google.com/maps?q=Rokin+metrostation+Amsterdam&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            <img src="assets/images/rokin-metro.png" alt="Rokin" loading="lazy" class="route-img tooltipable">
+                        </div>
+                        <div>
+                            <h3>1. Rokin</h3>
+                            <p>Het drukke beginpunt waar we de hectiek van de stad achter ons laten en ons richten op de rust van het water.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card flex-row">
+                        <div class="route-img-wrapper" title="Klik voor info & kaart" tabindex="0"
+                            data-title="Begijnhof" 
+                            data-desc="Een stil, historisch hofje midden in de stad waar al eeuwenlang stilte wordt bewaard. We observeren aandachtig de kalmte in dit besloten hofje." 
+                            data-img="assets/images/begijnhof.png" 
+                            data-map="https://maps.google.com/maps?q=Begijnhof+Amsterdam&t=&z=16&ie=UTF8&iwloc=&output=embed">
+                            <img src="assets/images/begijnhof.png" alt="Begijnhof" loading="lazy" class="route-img tooltipable">
+                        </div>
+                        <div>
+                            <h3>2. Begijnhof</h3>
+                            <p>Een stil, historisch hofje midden in de stad waar al eeuwenlang stilte wordt bewaard.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card flex-row">
+                        <div class="route-img-wrapper" title="Klik voor info & kaart" tabindex="0"
+                            data-title="Negen Straatjes" 
+                            data-desc="Karakteristieke Negen Straatjes (zoals de Hartenstraat en Runstraat) waar we details in de architectuur leren zien die je normaal voorbijloopt als je haast hebt." 
+                            data-img="assets/images/hartenstraat.png" 
+                            data-map="https://maps.google.com/maps?q=Hartenstraat+Amsterdam&t=&z=16&ie=UTF8&iwloc=&output=embed">
+                            <img src="assets/images/hartenstraat.png" alt="Negen Straatjes" loading="lazy" class="route-img tooltipable">
+                        </div>
+                        <div>
+                            <h3>3. Hartenstraat & 4. Runstraat</h3>
+                            <p>Karakteristieke Negen Straatjes waar we details in de architectuur leren zien die je normaal voorbijloopt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card flex-row">
+                        <div class="route-img-wrapper" title="Klik voor info & kaart" tabindex="0"
+                            data-title="Leliegracht" 
+                            data-desc="Een uiterst kalme gracht waar het water klotst en de natuurlijke groei van de stad op harmonieuze wijze samenkomt met menselijke ingrepen." 
+                            data-img="assets/images/leliegracht.png" 
+                            data-map="https://maps.google.com/maps?q=Leliegracht+Amsterdam&t=&z=16&ie=UTF8&iwloc=&output=embed">
+                            <img src="assets/images/leliegracht.png" alt="Leliegracht" loading="lazy" class="route-img tooltipable">
+                        </div>
+                        <div>
+                            <h3>5. Leliegracht</h3>
+                            <p>Een kalme gracht waar water en de groei van de stad op harmonieuze wijze samenkomen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card flex-row">
+                        <div class="route-img-wrapper" title="Klik voor info & kaart" tabindex="0"
+                            data-title="Westerkerk" 
+                            data-desc="Een majestueus symbool van Amsterdam dat rust en ruimtelijk overzicht biedt. Even stilstaan bij de imposante architectuur in de Jordaan." 
+                            data-img="assets/images/westerkerk.png" 
+                            data-map="https://maps.google.com/maps?q=Westerkerk+Amsterdam&t=&z=16&ie=UTF8&iwloc=&output=embed">
+                            <img src="assets/images/westerkerk.png" alt="Westerkerk" loading="lazy" class="route-img tooltipable">
+                        </div>
+                        <div>
+                            <h3>6. Westerkerk</h3>
+                            <p>Een symbool van Amsterdam dat rust en overzicht biedt over de Jordaan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card flex-row">
+                        <div class="route-img-wrapper" title="Klik voor info & kaart" tabindex="0"
+                            data-title="Café ’t Papeneiland" 
+                            data-desc="Een warme, gezellige en authentieke koffiepauze in een klassieke bruine kroeg die als een buurtige geborgenheid aanvoelt aan de Prinsengracht." 
+                            data-img="assets/images/papeneiland.png" 
+                            data-map="https://maps.google.com/maps?q=Cafe+'t+Papeneiland+Amsterdam&t=&z=16&ie=UTF8&iwloc=&output=embed">
+                            <img src="assets/images/papeneiland.png" alt="Café ’t Papeneiland" loading="lazy" class="route-img tooltipable">
+                        </div>
+                        <div>
+                            <h3>7. Café ’t Papeneiland</h3>
+                            <p>Een warme koffiepauze in een klassieke, lokale bruine kroeg die geborgenheid biedt en verbinding maakt met de buurt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card flex-row">
+                        <div class="route-img-wrapper" title="Klik voor info & kaart" tabindex="0"
+                            data-title="Haarlemmerstraat" 
+                            data-desc="Een dynamische maar plezierige mix van lokaal leven, winkeltjes en een ontspannen sfeer richting ons laatste groene stop." 
+                            data-img="assets/images/haarlemmerstraat.png" 
+                            data-map="https://maps.google.com/maps?q=Haarlemmerstraat+Amsterdam&t=&z=16&ie=UTF8&iwloc=&output=embed">
+                            <img src="assets/images/haarlemmerstraat.png" alt="Haarlemmerstraat" loading="lazy" class="route-img tooltipable">
+                        </div>
+                        <div>
+                            <h3>8. Haarlemmerstraat</h3>
+                            <p>Een mix van lokaal leven en ontspannen sfeer richting ons eindpunt in het groen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card flex-row">
+                        <div class="route-img-wrapper" title="Klik voor info & kaart" tabindex="0"
+                            data-title="Westerpark" 
+                            data-desc="Het ruime, groene eindpunt van de tour. Hier sluiten we af met een korte mindfulness oefening in de buitenklimaat om de loop te laten bezinken." 
+                            data-img="assets/images/westerpark.png" 
+                            data-map="https://maps.google.com/maps?q=Westerpark+Amsterdam&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            <img src="assets/images/westerpark.png" alt="Westerpark" loading="lazy" class="route-img tooltipable">
+                        </div>
+                        <div>
+                            <h3>9. Westerpark</h3>
+                            <p>Het groene eindpunt van de tour. Hier doen we een korte mindfulness oefening om de ervaring te landen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="section tickets-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Kies jouw moment van rust</h2>
+                <p>Duur: ~1 uur en 55 minuten | Maximaal 10 personen | Start: Centrum, Einde: Westerpark</p>
+            </div>
+
+            <div class="tickets-grid">
+                <!-- Ticket Pricing -->
+                <div class="ticket-cards">
+                    <div class="ticket-card reveal delay-1">
+                        <h3>Standaard ticket</h3>
+                        <div class="price">€ 24,50</div>
+                        <p>Reguliere deelname aan de wandeling.</p>
+                    </div>
+                    <div class="ticket-card featured reveal delay-2">
+                        <h3>Zorgticket</h3>
+                        <div class="price">€ 15,00</div>
+                        <p>Speciaal tarief voor medewerkers in de zorg. <br><small>(Opgeladen batterij gegarandeerd)</small></p>
+                    </div>
+                    <div class="ticket-card reveal delay-3">
+                        <h3>Groepsticket</h3>
+                        <div class="price">Op aanvraag</div>
+                        <p>Met een team of collega's de stad ontdekken (tot 10 personen).</p>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form-wrapper card reveal">
+                    <h3>Boek jouw ticket</h3>
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-group">
+                            <label for="name">Naam</label>
+                            <input type="text" id="name" required placeholder="Je volledige naam">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mailadres</label>
+                            <input type="email" id="email" required placeholder="jouw@email.nl">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Gewenste datum</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tickets_count">Aantal tickets</label>
+                            <input type="number" id="tickets_count" min="1" max="10" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Ticket type</label>
+                            <select id="type" required>
+                                <option value="zorg">Zorgticket (€ 15,00)</option>
+                                <option value="standaard">Standaard ticket (€ 24,50)</option>
+                                <option value="groep">Groepsticket (Op aanvraag)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Boek jouw moment van rust</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="section partners-section bg-light">
+        <div class="container text-center">
+            <div class="section-header reveal text-center">
+                <h2 class="section-title">Onze Partners</h2>
+                <p>Samen maken we deze betekenisvolle ervaring mogelijk in de stad.</p>
+            </div>
+
+            <div class="partners-grid reveal">
+                <!-- OLVG -->
+                <div class="partner-card card route-img-wrapper" title="Klik voor meer info" tabindex="0"
+                     data-title="OLVG Ziekenhuis"
+                     data-desc="Onze zorgpartner die de mentale vitaliteit en veerkracht van eigen medewerkers actief ondersteunt en stimuleert."
+                     data-img="assets/images/partner-olvg.png"
+                     data-map="">
+                    <img src="assets/images/partner-olvg.png" alt="OLVG Ziekenhuis Logo" loading="lazy" class="partner-logo">
+                    <h3>OLVG Ziekenhuis</h3>
+                    <p class="partner-role">Hoofdpartner Zorg</p>
+                </div>
+
+                <!-- Mindfulness Amsterdam -->
+                <div class="partner-card card route-img-wrapper" title="Klik voor meer info" tabindex="0"
+                     data-title="Mindfulness Amsterdam"
+                     data-desc="Begeleidt de ademhalings- en integratieoefeningen tijdens de afsluiting in het Westerpark voor rust in het hoofd."
+                     data-img="assets/images/partner-mindfulness.png"
+                     data-map="">
+                    <img src="assets/images/partner-mindfulness.png" alt="Mindfulness Amsterdam Logo" loading="lazy" class="partner-logo">
+                    <h3>Mindfulness Amsterdam</h3>
+                    <p class="partner-role">Welzijn & Balans</p>
+                </div>
+
+                <!-- Amsterdam 750 -->
+                <div class="partner-card card route-img-wrapper" title="Klik voor meer info" tabindex="0"
+                     data-title="Amsterdam 750"
+                     data-desc="Onderdeel van weerspiegelingen op 750 jaar stadsgeschiedenis en de tijdloze zoektocht naar verstilling in de stad."
+                     data-img="assets/images/partner-amsterdam750.png"
+                     data-map="">
+                    <img src="assets/images/partner-amsterdam750.png" alt="Amsterdam 750 Logo" loading="lazy" class="partner-logo">
+                    <h3>Amsterdam 750</h3>
+                    <p class="partner-role">Culturele verbinding</p>
+                </div>
+
+                <!-- Rituals -->
+                <div class="partner-card card route-img-wrapper" title="Klik voor meer info" tabindex="0"
+                     data-title="Rituals"
+                     data-desc="Biedt een betekenisvol reflectiemoment met een focus op ontspannen routines en zelfzorg voor de deelnemers."
+                     data-img="assets/images/partner-rituals.png"
+                     data-map="">
+                    <img src="assets/images/partner-rituals.png" alt="Rituals Logo" loading="lazy" class="partner-logo">
+                    <h3>Rituals</h3>
+                    <p class="partner-role">Ontspanning</p>
+                </div>
+
+                <!-- Café 't Papeneiland -->
+                <div class="partner-card card route-img-wrapper" title="Klik voor meer info" tabindex="0"
+                     data-title="Café ’t Papeneiland"
+                     data-desc="De warme, veilige haven voor een huiselijke koffiepauze, waar we de authentieke Amsterdamse gezelligheid ervaren."
+                     data-img="assets/images/papeneiland.png"
+                     data-map="https://maps.google.com/maps?q=Cafe+'t+Papeneiland+Amsterdam&t=&z=16&ie=UTF8&iwloc=&output=embed">
+                    <img src="assets/images/papeneiland.png" alt="Café ’t Papeneiland" loading="lazy" class="partner-logo filter-photo">
+                    <h3>Café ’t Papeneiland</h3>
+                    <p class="partner-role">Lokale gastvrijheid</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <h2 class="section-title">Veelgestelde Vragen</h2>
+            </div>
+            
+            <div class="faq-accordion reveal">
+                <div class="faq-item">
+                    <button class="faq-question">Voor wie is deze tour? <span class="icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Deze tour is primair ontworpen voor zorgmedewerkers van 25 jaar en ouder die in Amsterdam wonen en werken. Het is voor iedereen die veel geeft in zijn of haar werk en behoefte heeft aan een zacht, betekenisvol moment in de eigen stadsomgeving.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Hoe lang duurt de tour? <span class="icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>De wandeling duurt ongeveer 1 uur en 55 minuten. Dit is inclusief een rustige koffiepauze halverwege en een korte, geleide mindfulness afsluiting in het park.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is de tour intensief? <span class="icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Nee, we lopen in een ontspannen tempo met voldoende stopmomenten. Het gaat niet om de afstand, maar om het bewust en rustig ervaren van de stedelijke omgeving.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Wat is inbegrepen in de prijs? <span class="icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>De begeleiding door een gids, de verhalen over de stad en de architectuur, de koffie of thee naar keuze bij Café ’t Papeneiland, en de begeleide mindfulness oefening aan het eind van de route.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="Rust in de Stad Logo" class="footer-logo" onerror="this.style.display='none'; document.getElementById('footer-fallback').style.display='block';">
+                <h3 id="footer-fallback" style="display: none;">Rust in de Stad</h3>
+                <p>Een moment van rust en overzicht, speciaal ontworpen voor zorgmedewerkers in de historische binnenstad van Amsterdam.</p>
+                <div class="amsterdam-750-note">
+                    <p>Onderdeel van Amsterdam 750 jaar.</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navigatie</h4>
+                <ul>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#route">Route</a></li>
+                    <li><a href="#tickets">Tickets</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Vragen of samenwerken?</p>
+                <a href="mailto:hallo@rustindestad.nl" class="email-link">hallo@rustindestad.nl</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rust in de Stad. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <!-- Route Modal -->
+    <div id="route-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Sluiten">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image-col">
+                    <img id="modal-image" src="" alt="Locatie afbeelding">
+                </div>
+                <div class="modal-info-col">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-desc"></p>
+                    <div class="modal-map">
+                        <iframe id="modal-map-iframe" src="" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
